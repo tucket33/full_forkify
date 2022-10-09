@@ -1,0 +1,19 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "recipe app",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Dan Asema",
+  "license": "ISC",
+  "dependencies": {
+    "img": "^3.0.3",
+    "parcel": "^2.6.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0"
+  }
+}
