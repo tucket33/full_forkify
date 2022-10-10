@@ -1,13 +1,9 @@
-/*13  install first, then modify below inmarkup */
 import View from './View.js';
 import { Fraction } from 'fractional';
-/*11. also go up a folder */
 import icons from 'url:../../img/icons.svg';
 //
 class RecipeView extends View {
-  /*1.C. each child class will have this parentElement container prop*/
   _parentElement = document.querySelector('.recipe');
-  /*21c  */
   _errorMessage = `Alert Status Red.  Couldn't find that recipe`;
   _message = ``;
 
@@ -117,7 +113,6 @@ class RecipeView extends View {
         </a>
       </div>`;
   }
-  /*13  */
   _generateMarkupIngredient(ing) {
     return `<li class="recipe__ingredient">
 <svg class="recipe__icon">
@@ -134,5 +129,4 @@ class RecipeView extends View {
   }
 }
 
-/*2. Remember to import it in controller*/
 export default new RecipeView();
